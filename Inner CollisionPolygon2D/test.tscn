@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceeks6k1qrcgd"]
+
+[ext_resource type="Script" path="res://addons/inverted_collisionpolygon2d/polygon2d_to_collision2d.gd" id="1_gf523"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-509, -274)
+
+[node name="InvertedCollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+script = ExtResource("1_gf523")
+
+[node name="Polygon2D" type="Polygon2D" parent="Area2D"]
+invert_enabled = true
+polygon = PackedVector2Array(-3, -158, 76, -95, 38, -8, -55, -8, -87, -96)
